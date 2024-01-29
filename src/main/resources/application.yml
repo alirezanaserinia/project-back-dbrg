@@ -1,0 +1,25 @@
+app:
+    jwtSecret: "IranUniversityOfTehranProject1402FallTheBestUniversityInTheCountry"
+    jwtExpirationMs: 3600000
+    storageLocation: "uploads"
+    pythonScriptPath: "C:\\Users\\Alireza\\Desktop\\ProjectCodes\\Bio\\codes\\exe\\"
+    pythonScriptName: "Alzheimer.py"
+spring:
+    servlet:
+        multipart:
+            max-file-size: 3MB
+            max-request-size: 3MB
+    datasource:
+        url: "jdbc:postgresql://localhost:5432/postgres"
+        username: "postgres"
+        password: "ang48@DF"
+        driver-class-name: "org.postgresql.Driver"
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: "org.hibernate.dialect.PostgreSQLDialect"
+server:
+    port: 8080
+
